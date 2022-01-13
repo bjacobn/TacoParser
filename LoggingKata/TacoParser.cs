@@ -23,7 +23,9 @@
             }
 
             // grab the latitude from your array at index 0
+            
             // grab the longitude from your array at index 1
+
             // grab the name from your array at index 2
 
             // Your going to need to parse your string as a `double`
