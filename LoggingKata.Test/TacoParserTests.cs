@@ -30,9 +30,9 @@ namespace LoggingKata.Test
             //       each representing a TacoBell location
 
             //Arrange
-            var longitudeTest = new TacoParser();
+            var longitudeParser = new TacoParser();
             //Act
-            var actual = longitudeTest.Parse(line).Location.Longitude;
+            var actual = longitudeParser.Parse(line).Location.Longitude;
             //Assert
             Assert.Equal(actual, expected);
         }
@@ -45,11 +45,12 @@ namespace LoggingKata.Test
         {
            
             //Arrange
-            var latitudeTest = new TacoParser();
+            var latitudeParser = new TacoParser();
             //Act
-            var actual = latitudeTest.Parse(line).Location.Latitude;
+            var actual = latitudeParser.Parse(line).Location.Latitude;
             //Assert
             Assert.Equal(actual, expected);
         }
     }
+
 }
