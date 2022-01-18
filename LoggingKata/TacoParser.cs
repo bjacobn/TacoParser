@@ -18,7 +18,6 @@
             if (cells.Length < 3)
             {
                 // Log that and return null
-                logger.LogWarning("Less then three items, incomplete data ");
                 // Do not fail if one record parsing fails, return null
                 return null; // TODO Implement
             }
@@ -35,7 +34,7 @@
             // DONE - Your going to need to parse your string as a `double`
             // which is similar to parsing a string as an `int`
 
-            // DONE - You'll need to create a TacoBell class
+            // DONE- You'll need to create a TacoBell class
             // that conforms to ITrackable
 
             // Then, you'll need an instance of the TacoBell class
@@ -43,6 +42,7 @@
             var point = new Point() { Latitude = lat, Longitude = lon };
 
             var tacoBell = new TacoBell() { Name = name, Location = point };
+
 
             // Then, return the instance of your TacoBell class
             // Since it conforms to ITrackable
